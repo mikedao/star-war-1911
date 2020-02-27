@@ -8,12 +8,6 @@ class Search
     end
   end
 
-  def planets
-    service.get_planets.map do |raw_data|
-      Planet.new(raw_data)
-    end
-  end
-
   def service
     StarWarsService.new
   end

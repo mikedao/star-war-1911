@@ -1,3 +1,4 @@
+require 'faraday'
 class StarWarsService
 
   def get_ships
